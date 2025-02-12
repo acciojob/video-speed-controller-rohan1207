@@ -1,2 +1,53 @@
 
 /* Your CSS Code here. */
+/* Basic styling for the video player */
+.video-player {
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
+
+/* Control buttons styling */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.player__button, .rewind, .skip {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+	margin-right:10px;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 3px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.progress__filled {
+  background-color: #f00;
+  height: 100%;
+  width: 0;
+  border-radius: 3px;
+}
+
+input[type="range"] {
+  width: 100px;
+}
+
+.speed {
+  font-size: 16px;
+  margin-left: 10px;
+}
